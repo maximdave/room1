@@ -2,10 +2,10 @@ name: room1 CI
  
 on:
   push:
-    branches: [ dev ]
+    branches: [ main ]
    
   pull_request:
-    branches: [ dev ]
+    branches: [ main ]
  
 jobs:
   testIncomingPush:
