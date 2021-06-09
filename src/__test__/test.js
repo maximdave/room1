@@ -3,9 +3,9 @@ const app = require("../../app");
 
 describe("GET Request that fetches all of calculation ", () => {
   it("matches if recieved contains expected element", (done) => {
-    request(app).get("/");
-    expect(200);
-    done();
+    request(app).get("/")
+    .expect(200)
+    .end(done);
   });
 
   it("get the result of calculation", async () => {
